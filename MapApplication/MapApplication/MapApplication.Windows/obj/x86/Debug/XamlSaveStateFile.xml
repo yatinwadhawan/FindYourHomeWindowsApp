@@ -1,0 +1,9 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\admin\documents\visual studio 2013\projects\mapapplication\mapapplication\mapapplication.windows\obj\x86\debug\intermediatexaml\mapapplication.windows.exe" HashGuid="7e0ec030-e31e-c111-4a27-966cda9d1ff8" />
+    <ReferenceAssembly PathName="c:\users\admin\appdata\local\microsoft sdks\windows\v8.1\extensionsdks\bing.maps.xaml\1.313.0825.0\references\commonconfiguration\neutral\bing.maps.winmd" HashGuid="dcdce9e5-521a-6d20-3956-9df814dff813" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\users\admin\documents\visual studio 2013\projects\mapapplication\packages\facebook.client.0.9.91-alpha\lib\win81\facebook.client.dll" HashGuid="3a8c1588-cb78-69e5-9d9d-0a4aebbdacf7" />
+    <ReferenceAssembly PathName="c:\users\admin\documents\visual studio 2013\projects\mapapplication\packages\facebook.6.4.0\lib\win8\facebook.dll" HashGuid="afef58bf-02f3-c952-ab0b-9e449d7785f0" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

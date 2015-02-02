@@ -1,0 +1,1 @@
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\MapApplication\MapApplication\MapApplication.Windows\MapApplication.Windows.csproj;x64

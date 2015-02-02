@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="MapApplication.AddRequest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapApplication"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51"/>
+            <RowDefinition Height="717*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Sublease Your Apartment!" Foreground="#FF0AF635" />
+
+        </StackPanel>
+        <!--ContentPanel - place additional content here-->
+
+
+        <Image Source="/Images/huse.png" Height="307" Margin="26,46,924,364" Width="416" Grid.Row="1" />
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="483,46,0,599" Name="Name" Text="Yatin Wadhawan" FontSize="20" Width="460" />
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="483,290,0,355" Name="Address" Text="Address" FontSize="20" Width="460" />
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="484,0,0,477" Name="Contact" Text="Mobile" FontSize="20" Width="460" VerticalAlignment="Bottom" />
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="483,409,0,236" Name="Vacancy" Text="Number of Vacancies" FontSize="20" Width="460" />
+        <TextBox Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="482,521,0,124" Name="Rent" Text="Rent" FontSize="20" Width="460" />
+        <Button x:ConnectionId='1' Content="Available Now!" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="1005,0,0,502" Name="immediately"  Width="291"  FontSize="20" BorderBrush="#FFE90F0F" Foreground="#FFE21111" Background="White" VerticalAlignment="Bottom"                             />
+        <Button x:ConnectionId='2' Content="Vacant in 6 months!" Grid.Row="1" Height="72"  HorizontalAlignment="Left" Margin="1005,360,0,285" Name="after_2_months" Width="291" BorderBrush="Black" Foreground="Black" FontSize="20" Background="White"                               ></Button>
+        <Button x:ConnectionId='3' Content="Vacant in 3 months!" Grid.Row="1" Height="72"  HorizontalAlignment="Left" Margin="1005,252,0,393" Name="after_6_months"  Width="291" BorderBrush="#FF2F16D2" FontSize="20" Foreground="#FF270BDC" Background="White"                                />
+        <Button Content="Browse Image" Grid.Row="1" Height="72" HorizontalAlignment="Left" Margin="90,0,0,261" x:Name="immediately_Copy"  Width="291"  FontSize="20" BorderBrush="#FFE90F0F" Foreground="#FFE21111" Background="White" VerticalAlignment="Bottom" />
+        <Image x:ConnectionId='4' Name="back" Source="/Images/back.png"                      HorizontalAlignment="Left" Height="151" Margin="146,483,0,0" Grid.Row="1" VerticalAlignment="Top" Width="152"/>
+
+    </Grid>
+</Page>
+

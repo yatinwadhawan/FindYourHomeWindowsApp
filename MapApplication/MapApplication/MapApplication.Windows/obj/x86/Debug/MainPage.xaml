@@ -1,0 +1,60 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapApplication"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Bing.Maps"
+    xmlns:facebookControls="using:Facebook.Client.Controls"
+    x:Class="MapApplication.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,-1,0,1">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Images/up.jpg"  AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!--user information-->
+            <StackPanel HorizontalAlignment="Right">
+                <TextBlock 
+                    HorizontalAlignment="Center"
+                    Text="{Binding CurrentUser.Name, ElementName=loginButton}" />
+            </StackPanel>
+
+            <!--ContentPanel - place additional content here-->
+            <Grid x:Name="ContentPanel" 
+                    Grid.Row="1"
+                    Visibility="Collapsed">
+                <TextBlock FontSize="48" 
+                                HorizontalAlignment="Left" 
+                                VerticalAlignment="Center" 
+                                Text="welcome"/>
+            </Grid>
+
+            <!-- login control -->
+            <Image x:ConnectionId='1' 
+                Name="loginButton"
+                Grid.Row="1" 
+                                     
+                HorizontalAlignment="Right" 
+                Source="/Images/FacebookButton.png"
+                Margin="0,420,64,147" Width="271" />
+
+            <TextBlock Name="find"  Foreground="White" FontStyle="Normal" Text="Find Your Home" FontSize="35"  HorizontalAlignment="Left" Margin="999,362,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="278" FontFamily="AR JULIAN"/>
+            <Image x:ConnectionId='2'                      Source="/Images/map-icon.png" Name="rent" HorizontalAlignment="Left" Visibility="Collapsed" Height="241" Margin="1045,-30,-88,0" VerticalAlignment="Top" Width="369" Grid.RowSpan="2"/>
+            <Image x:ConnectionId='3' Name="add" Source="/Images/home.jpg" HorizontalAlignment="Left"                     Visibility="Collapsed" Height="164" Margin="1096,202,-21,0" Grid.Row="1" VerticalAlignment="Top" Width="251"/>
+            <Image x:ConnectionId='4' Name="profile" Source="/Images/creglist.jpg" HorizontalAlignment="Left"                         Visibility="Collapsed" Height="157" Margin="1096,455,-21,0" Grid.Row="1" VerticalAlignment="Top" Width="251"/>
+            <Image x:ConnectionId='5' Visibility="Collapsed" Source="/Images/back.png" Name="back" HorizontalAlignment="Left" Margin="10,455,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.131,-0.204"                      Height="229" Width="264"/>
+            <TextBlock Name="wel" Visibility="Collapsed" HorizontalAlignment="Left" Text="Hi Yatin..." FontSize="35" Foreground="White" Margin="286,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" Grid.RowSpan="2"/>
+            <Image Name="pic"  Source="/Images/yatin.jpg" Visibility="Collapsed" HorizontalAlignment="Left" Height="247" Margin="10,0,0,0" VerticalAlignment="Top" Width="254" Grid.RowSpan="2"/>
+            <Image HorizontalAlignment="Left" Name="huse" Visibility="Visible"  Source="/Images/huse.png" Height="138" Margin="1045,167,0,0" Grid.Row="1" VerticalAlignment="Top" Width="160"/>
+        </Grid>
+    </Grid>
+</Page>
+

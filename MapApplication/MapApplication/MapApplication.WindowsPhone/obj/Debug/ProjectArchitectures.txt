@@ -1,0 +1,1 @@
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\MapApplication\MapApplication\MapApplication.WindowsPhone\MapApplication.WindowsPhone.csproj;neutral
